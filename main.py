@@ -23,6 +23,8 @@ st.header("AI 변호사 상담")
 
 # 메시지 역순으로 가져와서 UI에 뿌리기
 for msg in thread_messages.data:
+    with st.chat_message('assistant'):
+        st.write("안녕하세요. AI 변호사입니다. 무엇을 도와드릴까요?")
     with st.chat_message(msg.role):
         st.write(msg.content[0].text.value)
 
