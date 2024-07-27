@@ -2,7 +2,7 @@ import os
 import time
 import streamlit as st
 from openai import OpenAI
-client = OpenAI()
+client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 # thread_id를 하나로 관리하기 위함
 if 'thread_id' not in st.session_state:
