@@ -2,7 +2,7 @@ import os
 import time
 import streamlit as st
 from openai import OpenAI
-os.environ[OPENAI_API_KEY] = st.secrets[OPENAI_API_KEY]
+os.environ[OPENAI_API_KEY] = st.secrets["OPENAI_API_KEY"]
 client = OpenAI()
 
 # thread_id를 하나로 관리하기 위함
