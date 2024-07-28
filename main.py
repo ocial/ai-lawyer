@@ -19,7 +19,7 @@ assistant_id="asst_2guEKPcOypRCB4rCAGKWvvuw"
 thread_messages = client.beta.threads.messages.list(thread_id, order="asc")
 
 # 페이지 제목
-st.header("AI 변호사 상담소")
+st.header("AI 변호사 상담소 (형사전문)")
 
 # 메시지 역순으로 가져와서 UI에 뿌리기
 with st.chat_message('assistant'):
